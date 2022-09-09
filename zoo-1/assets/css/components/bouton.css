@@ -1,0 +1,41 @@
+
+/* Règles spécifiques des liens de type bouton d'appel à l'action ----------------------- */
+
+    /* Base graphique pour les liens de
+        type bouton « appel à l'action » */
+    .bouton {
+        padding: 20px 25px;
+        max-width: max-content;
+        height: auto;
+    }
+
+    /* Style de base pour les liens de 
+        type bouton « appel à l'action » */
+    .bouton {
+        color: black;
+        font-size: 1.2em;
+        font-weight: 600;
+        text-transform: uppercase;
+        background-color: #a45c10;
+        border-radius: 20rem;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.212) inset;
+    }
+
+    .bouton:hover {
+        color: white;
+        background-color: #36140de7;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.205);
+        transition-duration: 0.6s;
+    }
+
+
+/* Adaptaion aux écrans ----------------------- */
+
+    /* Appareil <1275px */
+    @media screen and (max-width: 1275px) {
+        .bouton {
+            padding: 15px 20px;
+        }
+    }
+
+

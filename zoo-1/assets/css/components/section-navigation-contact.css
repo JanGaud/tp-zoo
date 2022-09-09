@@ -1,0 +1,82 @@
+
+/* Conteneur spécifique : Navigation contact du pied de page ----------------------- */
+
+    /* Retirer la largeur complète 
+        de la section contact */
+    .flex-row>.section-navigation-contact {
+        flex: none;
+    }
+
+    /* Base graphique des navigations 
+        (secondaires) du pied de page */
+    .navigation-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 100%;
+    }
+
+    /* Assurer la largeur complète des titres <h2> */
+    .navigation-contact h2 {
+        min-width: max-content;
+    }
+
+
+/* Conteneur spécifique : Conteneur des liens de réseaux sociaux ----------------------- */
+
+    /* Base graphique des liens de 
+        la navigation des réseaux sociaux */
+    .liens-reseaux-sociaux {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    /* Retirer la marge du haut */
+    .liens-reseaux-sociaux>*+* {
+        margin-top: 0;
+    }
+
+    /* Établir la hauteur des liens 
+        <a> des réseaux sociaux */
+    .liens-reseaux-sociaux :is(a, img) {
+        height: 30px;
+    }
+
+
+/* Adaptaion aux écrans ----------------------- */
+
+    /* Appareil <1150px */
+    @media screen and (max-width: 1130px) {
+        /* Ajuster la hauteur des liens 
+            <a> des réseaux sociaux */
+        .liens-reseaux-sociaux :is(a, img) {
+            height: 20px;
+        }
+    }
+
+    /* Appareil <730px */
+    @media screen and (max-width: 730px) {
+        /* Modifier la largeur minimale des 
+            liens de la navigation contact */
+        .navigation-contact .liens-nav-footer {
+            max-width: min-content;
+        }
+
+        /* Établir l'espace alloué à la 
+            section de navigation contact */
+        .flex-row>.section-navigation-contact {
+            flex: 40%;
+        }
+    }
+
+    /* Appareil <500px */
+    @media screen and (max-width: 500px) {
+        /* Réduire l'espacement entre 
+            les icones de réseaux sociaux */
+        .liens-reseaux-sociaux {
+            gap: 20px;
+        }
+    }
+
+

@@ -1,0 +1,49 @@
+
+/* Règles spécifiques d'un lien sur un logo ----------------------- */
+
+    /* Établir la taille du lien du logo */
+    a.logo {
+        height: 50px;
+    }
+
+    /* Retirer les marges du bas et les
+        marges intérieures sur le lien du logo */
+    a.logo {
+        margin-right: auto;
+        padding: 0;
+    }
+
+    /* Marges de sécurité du logo */
+    a.logo {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Hérité les dimensions du lien du logo 
+        pour les image de logo */
+    img.logo {
+        width: inherit;
+        height: inherit;
+    }
+
+
+/* Adaptaion aux écrans ----------------------- */
+
+    /* Appareil <1275px */
+    @media screen and (max-width: 1275px) {
+        .navigation-principale a.logo {
+            height: 40px;
+        }
+    }
+
+    /* Appareil <500px */
+    @media screen and (max-width: 500px) {
+        .navigation-principale a.logo {
+            height: 30px;
+        }
+
+        body>footer a.logo {
+            height: 35px;
+        }
+    }
+

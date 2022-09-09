@@ -1,0 +1,67 @@
+
+/* Conteneur spécifique : Section Appel à l'action ----------------------- */
+
+    /* Dégagement supplémentaire par 
+        rapport aux côtés de la page */
+    .section-appel-action {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    /* Retirer la marge du bas 
+        pour la coller au footer */
+    .section-appel-action {
+        margin-bottom: 0;
+    }
+
+    /* Style de base de la section */
+    .section-appel-action {
+        background-color: rgb(200,200,200);
+    }
+
+    /* Base graphique de la section */
+    .section-appel-action>.flex-row{
+        gap: 160px;
+    }
+
+    /* Largeur maximale des titres de section <h2> */
+    .section-appel-action h2 {
+        max-width: 28ch;
+    }
+
+    /* Taille du titre <h2> de 
+        la sous-section infolettre */
+    .sous-section-infolettre h2 {
+        font-size: 1.625em;
+    }
+
+    /* Largeur maximale du texte de paragraphe 
+        <p> de la sous-section infolettre */
+    .sous-section-infolettre p {
+        max-width: 50ch;
+    }
+
+
+/* Adaptaion aux écrans ----------------------- */
+
+    /* Appareil <1150px */
+    @media screen and (max-width: 1150px) {
+        /* Modifier l'espacement entre 
+            les 2 sous-sections */
+        .section-appel-action>.flex-row {
+            gap: 80px;
+        }
+    }
+
+    /* Appareil <700px */
+    @media screen and (max-width: 700px) {
+        /* Modifier la disposition de la section */
+        .section-appel-action>.flex-row {
+            flex-direction: column;
+            gap: 80px;
+        }
+    }
+
+

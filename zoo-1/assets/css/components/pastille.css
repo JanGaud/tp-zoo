@@ -1,0 +1,49 @@
+
+/* Conteneur spécifique : Conteneur de type « pastille » ----------------------- */
+
+    /* Base graphique d'un conteneur 
+        de type « pastille » */
+    .pastille {
+        box-sizing: border-box;
+        padding: 5vh;
+        border-radius: 100%;
+    }
+
+    /* Largeur et hauteur (rond parfait) par défaut
+        d'un conteneur de type « pastille » */
+    .pastille {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    /* Établir un alignement absolument centré 
+        pour tout contenu des « pastilles » */
+    .pastille {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Style de base par défaut d'un 
+        élément de type « pastille » */
+    .pastille {
+        border: none;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+    }
+
+
+/* Adaptaion aux écrans ----------------------- */
+
+    /* Appareil <1150px */
+    @media screen and (max-width: 1150px) {
+        /*  */
+    }
+
+    /* Appareil <500px */
+    @media screen and (max-width: 500px) {
+        /*  */
+    }
+
+

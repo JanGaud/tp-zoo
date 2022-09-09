@@ -1,0 +1,98 @@
+/* Creation de grid de la page */
+#pageAnimaux section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+/* Definir les proportions et couleurs initials des cartes */
+#pageAnimaux article{
+    min-height: 600px;
+    max-height: auto;
+    margin-bottom:  100px;
+    background-color:rgb(27,27,27);
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.144);
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+/* Definir l'alignement du contenu des cartes en flex column */
+#pageAnimaux article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.images-animaux img{
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+
+.images-animaux{
+    height: 300px;
+    width: 100%;
+}
+
+#pageAnimaux button{
+    width: 150px;
+    padding: 10px;
+    border-radius: 30px;
+    align-self: center;
+    border: none;
+    background-color: #a45c10;
+    box-shadow:2px 2px 5px rgba(0, 0, 0, 0.212) inset;
+}
+
+#pageAnimaux button:hover{
+    transition: 0.4s;
+    background-color: #347434;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.164);
+}
+
+.information-general-animaux{
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    height: inherit;
+}
+
+.animal-rescue-logo-container{
+    width: 200px;
+    height: auto;
+}
+
+.animal-rescue-logo-container>img{
+    width: 100%;
+    height: auto;
+}
+
+.animal-rescue{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ecussons-selections{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-ecussons{
+    width: 200px;
+    height: 200px;
+}
+
+.container-ecussons>img{
+    width: 200px;
+    height: auto;
+}
+
+.container-ecussons>img:hover{
+    transition: 0.6s;
+    transform: scale(1.5);
+}

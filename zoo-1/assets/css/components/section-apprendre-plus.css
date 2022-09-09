@@ -1,0 +1,25 @@
+
+/* Conteneur spécifique : Section Apprendre plus ----------------------- */
+
+    /* Base graphique du conteneur */
+    .section-apprendre-plus>.flex-row {
+        align-items: unset;
+    }
+
+    /* Établir la hauteur minimale 
+        des images des articles */
+    .section-apprendre-plus .carte-lien img {
+        min-height: 40vh;
+    }
+
+
+/* Adaptaion aux écrans ----------------------- */
+
+    /* Appareil <700px */
+    @media screen and (max-width: 700px) {
+        .section-apprendre-plus>.flex-row {
+            flex-direction: column;
+        }
+    }
+
+

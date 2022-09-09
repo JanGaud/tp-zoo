@@ -1,0 +1,305 @@
+
+/* Conteneur spécifique : Navigation principale ----------------------- */
+
+    /* Base graphique du menu principal */
+    .navigation-principale {
+        width: inherit;
+        height: 100px;
+        margin: 0;
+        padding: 0px 40px;
+    }
+
+    /* Base graphique du menu principal */
+    .navigation-principale {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Position sticky de la navigation */
+    .navigation-principale {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    /* Style de base de la navigation principale */
+    .navigation-principale {
+        color: white;
+        background-color: #347434;
+    }
+
+    /* Retirer toute marge de tous 
+        les liens <a> de la navigation */
+    .navigation-principale a {
+        margin: 0;
+    }
+
+    /* Dégagement de droite des liens 
+        de la navigation du logo */
+    .navigation-principale a.logo {
+        margin-right: auto;
+        z-index: inherit;
+    }
+
+    /* Dégagement de la navigation par 
+        rapport au bouton "Billetterie" */
+    .navigation-principale .bouton {
+        margin-left: 10px;
+    }
+
+
+/* Règles spécifiques de la section des liens de la navigation principale ----------------------- */
+
+    /* Base graphique du conteneur de 
+        liens de la navigation principale */
+    .liens-nav-principale {
+        height: 100%;
+    }
+
+    /* Contexte flex horizontal et 
+        alignement vertical centré */
+    .liens-nav-principale {
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    /* Style de base du conteneur de liens 
+        de la navigation principale à être hérité */
+    .liens-nav-principale {
+        color: inherit;
+        background-color: inherit;
+    }
+
+    /* Base graphique de tous les liens <a> 
+        de la navigation (sauf .bouton) */
+    .liens-nav-principale a {
+        padding: 10px 20px;
+    }
+
+    /* Style de base de tous les liens <a> 
+        de la navigation (sauf .bouton) */
+    .liens-nav-principale a {
+        font-size: inherit;
+        background-color: inherit;
+    }
+
+
+/* Règles spécifiques du menu déroulant de la navigation principale ----------------------- */
+
+    /* Base graphique des conteneurs 
+        de menu déroulant */
+    .menu-deroulant {
+        height: 100%;
+    }
+
+    /* Style de base des conteneurs de 
+        menu déroulant à être hérité */
+    .menu-deroulant {
+        color: inherit;
+        background-color: inherit;
+    }
+
+    /* Base graphique du conteneur de 
+        contenu du menu déroulant et le cacher */
+    .contenu-menu-deroulant {
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+
+    /* Ajout de dégagement du bas 
+        pour le dernier lien */
+    .contenu-menu-deroulant {
+        padding-bottom: 15px;
+    }
+
+    /* Style de base du conteneur des 
+        liens du menu déroulant à être hérité */
+    .contenu-menu-deroulant {
+        color: inherit;
+        background-color: inherit;
+    }
+
+    /* Établir l'interaction avec 
+        le contenu du menu déroulant */
+    .menu-deroulant:hover .contenu-menu-deroulant {
+        display: flex;
+        flex-direction: column;
+        transition-duration: 300ms ease-in-out;
+    }
+
+    /* Base graphique des liens de premier niveau avec 
+        une hauteur complète (100%) de la navigation
+        et alignement vertical centré */
+    .navigation-principale .lien-principal {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Style de base des liens de 
+        premier niveau de la navigation */
+    .navigation-principale .lien-principal {
+        font-size: 1.2em;
+        border-bottom: 5px solid inherit;
+    }
+
+    .navigation-principale .lien-principal:hover {
+        border-bottom: 5px solid rgb(200, 200, 200);
+        transition-duration: 300ms;
+    }
+
+    /* Base graphique des liens de 
+        deuxième niveau du menu déroulant */
+    .contenu-menu-deroulant>a {
+        text-align: left;
+    }
+
+
+/* Adaptaion aux écrans ----------------------- */
+
+    /* Appareil <1275px */
+    @media screen and (max-width: 1275px) {
+        /* Réduire la hauteur de 
+            la navigation principale */
+        .navigation-principale {
+            height: 85px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        /* Réduire les marges intérieures 
+            de tous les liens <a> */
+        .liens-nav-principale a {
+            padding: 5px 10px;
+        }
+    }
+
+    /* Appareil >1131px */
+    @media screen and (min-width: 1131px) {
+        /* Cacher le input */
+        input[type="checkbox"] {
+            display: none;
+        }
+    }
+
+    /* Appareil <1130px */
+    @media screen and (max-width: 1130px) {
+        /* Réduire la taille du bouton "Billetterie" */
+        .navigation-principale .bouton {
+            font-size: .875em;
+            padding: 15px 20px;
+        }
+
+        /* Base graphique du conteneurdes liens 
+            de la navigation en format mobile */
+        .liens-nav-principale {
+            position: fixed;
+            inset: 0;
+            height: unset;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 0;
+            overflow: none;
+            transition: opacity 300ms ease-in-out;
+        }
+
+        /* Dégagement supplémentaire des 
+            liens par rapport aux côtés */
+        .liens-nav-principale {
+            padding-top: 125px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        /* Retirer toutemarge des liens */
+        .liens-nav-principale * {
+            margin: 0;
+        }
+
+        /* Rétablir les dimensions du 
+            conteneur de menu déroulant */
+        .menu-deroulant {
+            height: inherit;
+            width: 100%;
+        }
+
+        /* Afficher le contenu du 
+            menu déroulant en tout temps */
+        .contenu-menu-deroulant {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-left: 20px;
+            padding-bottom: 0;
+        }
+
+        /* Rétablir la taille et 
+            l'espacement des liens */
+        .contenu-menu-deroulant a {
+            font-size: 1.2em;
+            padding-top: 10px;
+            padding-bottom: 0;
+        }
+
+        /* Base graphique des liens de 
+            premier niveau en format mobile */
+        .navigation-principale .lien-principal {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        /* Style graphique des liens de 
+            premier niveau en format mobile */
+        .navigation-principale .lien-principal {
+            font-size: 1.5em;
+            border-bottom: 1px solid rgb(200, 200, 200);
+        }
+
+        .navigation-principale .lien-principal:hover {
+            border-bottom: 1px solid rgb(27, 27, 27);
+        }
+
+        /* Base graphique du input pour 
+            afficher/cacher la navigation */
+        input[type="checkbox"] {
+            position: relative;
+            appearance: none;
+            -webkit-appearance: none;
+            width: 50px;
+            padding: 5px;
+            margin-left: 20px;
+            z-index: 1;
+            background-color: inherit;
+            cursor: pointer;
+            order: 1;
+        }
+
+        /* Icones du menu "burger" */
+        input[type="checkbox"]::before {
+            content: url("../../img/menu_burger.svg");
+        }
+
+        input[type="checkbox"]:checked::before {
+            content: url("../../img/fermer_menu.svg");
+        }
+
+        /* Cacher le contenu de la navigation 
+            quand le menu est fermer */
+        input[type="checkbox"]:not(:checked)~.liens-nav-principale {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* Déplacer le bouton à gauche du menu "burger" */
+        .navigation-principale .bouton {
+            z-index: 1;
+        }
+    }
+
+

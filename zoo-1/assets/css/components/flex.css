@@ -1,0 +1,40 @@
+
+/* Conteneur spécifique : Image en arrière-plan ----------------------- */
+
+    /* Contexte flex horizontal par défaut 
+        avec marges par espacement */
+    .flex-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    /* Assurer une largeur et une hauteur égales (par défaut) pour 
+        tous les conteneurs enfants directs d'un conteneur flex */
+    .flex-row>* {
+        flex: 1;
+    }
+
+    /* Contexte flex vertical par défaut 
+        avec marges par espacement */
+    .flex-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+
+/* Adaptaion aux écrans ----------------------- */
+
+    /* Appareil <1150px */
+    @media screen and (max-width: 1150px) {
+        /*  */
+    }
+
+    /* Appareil <500px */
+    @media screen and (max-width: 500px) {
+        /*  */
+    }
+
+

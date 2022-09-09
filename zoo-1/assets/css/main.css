@@ -1,0 +1,174 @@
+@import "typographie.css";
+@import "components/logo.css";
+@import "components/bouton.css";
+@import "components/flex.css";
+@import "components/carousel.css";
+@import "components/pastille.css";
+@import "components/image-en-bg.css";
+@import "components/carte-lien.css";
+@import "components/carte-appel-action.css";
+@import "components/petite-navigation-secondaire.css";
+@import "components/navigation-principale.css";
+@import "components/header-bienvenue.css";
+@import "components/header-animaux.css";
+@import "components/section-activites-familiales.css";
+@import "components/section-decouvrir-animaux.css";
+@import "components/section-aidez-nous.css";
+@import "components/section-appel-action.css";
+@import "components/formulaire-infolettre.css";
+@import "components/footer.css";
+@import "components/section-navigation-contact.css";
+@import "components/navigation-secondaire.css";
+@import "components/pageAnimaux.css";
+
+
+
+/*
+    Gouttière et rythme de base
+        20px
+
+    Rythme serré
+        10px
+
+    Rythme espacé
+        160px
+
+    Largeur maximale des sections principales
+        100rem
+*/
+
+
+/* Règles génériques pour toutes les pages du site -------------------- */
+
+    /* Rétablir les marges
+        intérieures et extérieures sur tout */
+    * {
+        /* outline: 1px dashed red; */
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Rythme vertical de base
+        pour tous les éléments de contenu */
+    *+p, *+a, *+img, *+small, *+h1, *+h2, *+h3, *+h4, *+h5, *+h6, *+form { 
+        margin-top: 20px; 
+    }
+
+    /* Base « prototype » pour les éléments enligne 
+        utilisés seuls (sans parent textuel — p. ex. <p>) */
+    a, small {
+        display: inline-block;
+    }
+
+    /* Largeur maximale de toute ligne
+        de sous-titres pour une lisibilité adéquate */
+    h2 {
+        max-width: 30ch;
+    }
+
+    /* Largeur maximale de toute ligne
+        de paragraphe pour une lisibilité adéquate */FFF
+    p {
+        max-width: 80ch;
+    }
+
+
+/* Règles spécifiques des éléments de contenu ----------------------- */
+
+    /* Intervention graphique séparant clairement
+        les titres du contenu les suivant */
+    h2 {
+        padding-bottom: 10px;
+    }
+
+    /* Assurer la taille de la « boite »
+        des liens peu importe les bordures ajoutées */
+    a {
+        box-sizing: border-box;
+    }
+
+
+/* Règles générales des sections de contenu ----------------------- */
+
+    /* Assurer la taille de la « boite »
+        des liens peu importe les bordures ajoutées */
+    body>* {
+        box-sizing: border-box;
+    }
+
+    /* Marges intérieures et extérieures
+        de sécurité de base */
+    body>* {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    /* Limiter et centrer
+        tous les éléments de contenu */
+    body>* {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Rythme vertical espacé pour bien dégager
+        les principaux conteneurs de contenu */
+    body>*+* {
+        margin-top: 160px;
+    }
+
+    /* Intervention graphique séparant clairement
+        les titres de section du contenu les suivant */
+    body>section>header {
+        padding-bottom: 10px;
+    }
+
+    /* Rythme vertical de base pour 
+        les éléments de section */
+    body>section>*+* {
+        margin-top: 20px;
+    }
+
+
+/* Règles générales des grilles des sections de contenu -------------------- */
+
+    /* Contexte flex par colonne pour tous 
+        les conteneurs enfants directs par défaut */
+    body>section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+
+/* Règles spécifiques des éléments de contenu -------------------- */
+
+    /* Base graphique de toute 
+        image dans les sections */
+    body>section img {
+        width: inherit;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+
+/* Adaptaion aux écrans ----------------------- */
+
+    /* Appareil <940px */
+    @media screen and (max-width: 940px) {
+        /* Modifier l'espacement entre 
+            les principales sections */
+        body>*+* {
+            margin-top: 100px;
+        }
+    }
+
+    /* Appareil <500px */
+    @media screen and (max-width: 500px) {
+        /* Modifier l'espacement entre 
+            les principales sections */
+        body>*+* {
+            margin-top: 80px;
+        }
+    }
+
+

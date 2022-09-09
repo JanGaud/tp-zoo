@@ -1,0 +1,71 @@
+
+/* Conteneur spécifique : Petite navigation secondaire ----------------------- */
+
+    /* Base graphique de la 
+        petite navigation secondaire */
+    .petite-navigation-secondaire {
+        width: inherit;
+        height: 35px;
+        margin: 0;
+        padding: 0px 40px;
+    }
+
+    /* Base graphique de contexte 
+        flex pour la petite navigation */
+    .petite-navigation-secondaire {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    /* Style de base de la petite navigation */
+    .petite-navigation-secondaire {
+        font-size: 0.75em;
+        text-transform: uppercase;
+        color: rgb(200, 200, 200);
+        background-color: #36140d;
+    }
+
+    /* Base graphique des liens <a> 
+        de la petite navigation */
+    .petite-navigation-secondaire>a {
+        display: flex;
+        align-items: center;
+        height: inherit;
+        margin-top: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Style de base des liens <a> 
+        de la petite navigation */
+    .petite-navigation-secondaire>a {
+        border-bottom: 2px solid rgb(65, 65, 65);
+    }
+
+    .petite-navigation-secondaire>a:hover {
+        border-bottom: 2px solid rgb(27, 27, 27);
+    }
+
+
+/* Adaptaion aux écrans ----------------------- */
+
+    /* Appareil <1275px */
+    @media screen and (max-width: 1275px) {
+        /* Réduire la hauteur et les marges intérieures 
+            de la petite navigation secondaire */
+        .petite-navigation-secondaire {
+            height: 30px;
+            padding: 0px 20px;
+        }
+    }
+
+    /* Appareil <1130px */
+    @media screen and (max-width: 1130px) {
+        /* Retirer la petite navigation secondaire */
+        .petite-navigation-secondaire {
+            display: none;
+        }
+    }
+
+

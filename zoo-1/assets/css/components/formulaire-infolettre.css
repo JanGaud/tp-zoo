@@ -1,0 +1,134 @@
+
+/* Règles spécifiques du formulaire de l'infolettre ----------------------- */
+
+    /* Établir une largeur maximale du formulaire */
+    .formulaire-infolettre {
+        max-width: 600px;
+    }
+
+    /* Base graphique du conteneur du formulaire */
+    .formulaire-infolettre>.flex-row {
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 0;
+        height: 60px;
+        overflow: visible;
+    }
+
+    /* Retirer la largeur complète (100%) 
+        des éléments du formulaire */
+    .formulaire-infolettre>.flex-row>* {
+        flex: none;
+    }
+
+    /* Cacher le label */
+    .formulaire-infolettre label {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    /* Assurer la largeur complète (100%) 
+        du champ de formulaire */
+    .formulaire-infolettre input:not(.bouton) {
+        width: 100%;
+    }
+
+    /* Style de base du bouton de soumission */
+    .formulaire-infolettre .bouton {
+        font-family: 'Jost', sans-serif;
+        font-size: 1em;
+    }
+
+    /* Assurer les dimensions des inputs */
+    .formulaire-infolettre input {
+        box-sizing: border-box;
+        height: inherit;
+    }
+
+    /* Style de base des inputs */
+    .formulaire-infolettre input {
+        padding: 20px 30px;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 10rem;
+        box-shadow: 3px 3px 5px rgb(0,0,0,.4) inset;
+    }
+
+    /* Modifier le style du placeholder */
+    .formulaire-infolettre input::placeholder {
+        font-size: 1em;
+    }
+
+    /* Base graphique du bouton de soumission */
+    .formulaire-infolettre .bouton {
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+    }
+
+    /* Style de base du bouton de soumission */
+    .formulaire-infolettre .bouton {
+        color: white;
+        background-color: rgb(27,27,27);
+    }
+
+    .formulaire-infolettre .bouton:hover {
+        transition-duration: 0.4s;
+    }
+
+
+/* Adaptaion aux écrans ----------------------- */
+
+    /* Appareil <1275px */
+    @media screen and (max-width: 1275px) {
+        /* Modifier la disposition 
+            des éléments du formulaire */
+        .formulaire-infolettre>.flex-row {
+            flex-direction: column;
+            align-items: flex-start;
+            height: unset;
+        }
+
+        /* Déplacer le bouton du formulaire */
+        .formulaire-infolettre .bouton {
+            position: unset;
+            margin-top: 10px;
+        }
+    }
+
+    /* Appareil <700px */
+    @media screen and (max-width: 700px) {
+        /* Modifier la disposition 
+            des éléments du formulaire */
+        .formulaire-infolettre>.flex-row {
+            flex-direction: row;
+            align-items: center;
+            height: 60px;
+        }
+
+        /* Déplacer le bouton du formulaire */
+        .formulaire-infolettre .bouton {
+            position: absolute;
+            margin-top: 0;
+        }
+    }
+
+    /* Appareil <500px */
+    @media screen and (max-width: 500px) {
+        /* Modifier la disposition 
+            des éléments du formulaire */
+        .formulaire-infolettre>.flex-row {
+            flex-direction: column;
+            align-items: flex-start;
+            height: unset;
+        }
+
+        /* Déplacer le bouton du formulaire */
+        .formulaire-infolettre .bouton {
+            position: unset;
+            margin-top: 10px;
+        }
+    }
+
+

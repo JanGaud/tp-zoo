@@ -1,0 +1,117 @@
+
+/* Conteneur spécifique : Carte de liens appel à l'action ----------------------- */
+
+    /* Base graphique de la section */
+    .carte-appel-action {
+        position: relative;
+        align-items: center;
+        min-height: 60vh;
+        gap: 0;
+    }
+
+    /* Retirer la marge de haut pour 
+        tous les enfants directs de la carte */
+    .carte-appel-action>* {
+        margin-top: 0;
+    }
+
+    /* Établir les dimensions des images */
+    .carte-appel-action>img {
+        width: 100%;
+        height: 60vh;
+        overflow: hidden;
+    }
+
+    /* Établir les dimensions des 
+        liens de type bouton et pastille */
+    .carte-appel-action .pastille {
+        width: min-content;
+        width: 300px;
+        height: 300px;
+    }
+
+    /* Établir la position des liens */
+    .carte-appel-action .pastille {
+        position: absolute;
+        bottom: -150px;
+    }
+
+    /* Modifier le style des 
+        liens de type pastille */
+    .carte-appel-action .pastille {
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.144);
+    }
+
+
+/* Adaptaion aux écrans ----------------------- */
+
+    /* Appareil <1275px */
+    @media screen and (max-width: 1275px) {
+        /* Réduire les dimensions des 
+            liens de type bouton et pastille */
+        .carte-appel-action .pastille {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    /* Appareil <1150px */
+    @media screen and (max-width: 1150px) {
+        /* Réduire les dimensions des 
+            liens de type bouton et pastille */
+        .carte-appel-action .pastille {
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+    /* Appareil <940px */
+    @media screen and (max-width: 940px) {
+        /* Modifier la hauteur de la carte */
+        .carte-appel-action {
+            min-height: 40vh;
+        }
+
+        /* Modifier la hauteur des images */
+        .carte-appel-action>img {
+            height: 40vh;
+            z-index: -1;
+        }
+
+        /* Modifier la postion du 
+            bouton de type pastille */
+        .carte-appel-action .pastille {
+            bottom: -50px;
+            right: -10px;
+        }
+    }
+
+    /* Appareil <500px */
+    @media screen and (max-width: 500px) {
+        /* Modifier la hauteur de la carte */
+        .carte-appel-action {
+            min-height: 55vh;
+            align-items: center;
+        }
+
+        /* Modifier la hauteur des images */
+        .carte-appel-action>img {
+            height: 55vh;
+        }
+
+        /* Réduire les dimensions des 
+            liens de type bouton et pastille */
+        .carte-appel-action .pastille {
+            width: 250px;
+            height: 250px;
+        }
+
+        /* Modifier la postion du 
+            bouton de type pastille */
+        .carte-appel-action .pastille {
+            bottom: -120px;
+            right: unset;
+        }
+    }
+
+

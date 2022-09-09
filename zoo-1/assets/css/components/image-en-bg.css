@@ -1,0 +1,19 @@
+
+/* Conteneur spécifique : Image en arrière-plan ----------------------- */
+
+    /* Base graphique par défaut pour 
+        une image en arrière-plan */
+    .image-en-bg::before {
+        content: "";
+        position: absolute;
+        min-height: inherit;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        z-index: -1;
+    }
+
+

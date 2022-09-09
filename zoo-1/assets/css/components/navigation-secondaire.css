@@ -1,0 +1,78 @@
+
+/* Conteneur spécifique : Navigation secondaire du pied de page ----------------------- */
+
+    /* Attribuer l'espace de la navigation de contact */
+    .flex-row>.navigation-secondaire {
+        flex: content;
+        max-width: fit-content;
+    }
+
+    /* Base graphique de la 
+        navigation secondaire */
+    .navigation-secondaire {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 100%;
+    }
+
+    /* Aligner à gauche de la navigation secondaire */
+    .navigation-secondaire .flex-row {
+        justify-content: flex-start;
+    }
+
+    /* Assurer une largeur minimale des 
+        liens de la navigation secondaire */
+    .navigation-secondaire .flex-row,
+    .navigation-secondaire .flex-row>* {
+        min-width: fit-content;
+    }
+
+    /* Retirer toute marge de haut des 
+        liens <a> de la navigation secondaire */
+    .navigation-secondaire .flex-row>* {
+        margin-top: 0;
+        flex: none;
+    }
+
+
+/* Adaptaion aux écrans ----------------------- */
+
+    /* Appareil <1130px */
+    @media screen and (max-width: 1130px) {
+        /* Modifier la disposition des 
+            éléments de la navigation secondaire */
+        .navigation-secondaire {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        /* Rétablir la largeur complète 
+            de la nivation secondaire */
+        .flex-row>.navigation-secondaire {
+            max-width: unset;
+            flex: 60%;
+        }
+
+        /* Assurer la largeur complète des 
+            conteneurs du menu secondaire */
+        .navigation-secondaire .flex-row {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* Assurer la largeur complète des 
+            conteneurs du menu secondaire */
+        .navigation-secondaire .flex-row>* {
+            flex: 1;
+            max-width: max-content;
+        }
+
+        /* Ajuster la taille des liens de 
+            premier niveau de la navigation secondaire */
+        .navigation-secondaire .liens-nav-footer h2 {
+            font-size: 1em;
+        }
+    }
+
+

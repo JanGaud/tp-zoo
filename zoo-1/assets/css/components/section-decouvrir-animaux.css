@@ -1,0 +1,77 @@
+
+/* Conteneur spécifique : Section Découvrir animaux ----------------------- */
+
+    /* Base graphique de la 
+        grille de la section */
+    .section-decouvrir-animaux .carousel {
+        align-items: unset;
+    }
+
+    /* Établir les dimensions des 
+        boutons d'appel à l'action */
+    .section-decouvrir-animaux .pastille {
+        width: 500px;
+        height: 500px;
+    }
+
+    /* Base graphique de la 
+        "pastille" de la section */
+    .section-decouvrir-animaux .pastille {
+        flex: none;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Établir la couleur de 
+        fond de la "pastille" */
+    .section-decouvrir-animaux .pastille {
+        /* .bg-color-____ */
+        background-color: rgb(110,110,110);
+    }
+
+
+/* Adaptaion aux écrans ----------------------- */
+
+    /* Appareil <px */
+    @media screen and (max-width: 500px) {
+        /* Établir les dimensions des 
+            boutons d'appel à l'action */
+        .section-decouvrir-animaux .pastille {
+            width: 400px;
+            height: 400px;
+        }
+
+        /* Établir la hauteur minimale 
+            des images des articles */
+        .section-decouvrir-animaux .carte-lien picture {
+            min-height: 10vh;
+        }
+    }
+
+    /* @media screen and (min-width: 500px) { */
+        /* Établir la hauteur minimale 
+            des images des articles */
+        /* .section-decouvrir-animaux .carte-lien {
+            max-width: 70%;
+        }
+    } */
+
+    /* @media screen and (min-width: 1150px) { */
+        /* Établir la hauteur minimale 
+            des images des articles */
+        /* .section-decouvrir-animaux .carte-lien {
+            max-width: 500px;
+        }
+    } */
+
+    /* @media screen and (min-width: 1700px) { */
+        /* Établir la hauteur minimale 
+            des images des articles */
+        /* .section-decouvrir-animaux .carte-lien {
+            max-width: 600px;
+        }
+    } */
+
+

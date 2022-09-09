@@ -1,0 +1,65 @@
+
+TP02 - Création et design de site web
+Argumentaire des choix et changements
+
+
+
+// Design graphique
+
+-- Général --
+J'ai voulu créer un design amusant et amical. Des boutons arrondis moins sérieux et aggressifs. J'ai utilisé des rectancles et des "pastilles" pour ajouter de la variation dans le design.
+
+-- Couleurs --
+À venir...
+
+-- Typographie --
+J'aime intégrer 2 styles de typographie différents, car cela crée une variation et amène de la divergence.
+J'ai donc opté pour une typographie simple sans-sérif pour les titres de sections, boutons, autres éléments que je voudrais différents du "normal", et une typographie sérif pour les textes de paragraphe, petits titres ou surtitres.
+
+
+-----
+
+
+// Changements apportés
+
+-- Général --
+J'ai fait un "nettoyage" dans le CSS et retiré certaines propriétés de styles en double.
+J'ai aussi ajouté des classes réutilisables, comme .flex-row et .flex-col. Donc, au lieu de réécrire les propriétés pour chacune des sections, j'ajoute simplement la classe dans le HTML.
+De plus, j'ai fait un petit ménage dans l'organisation des fichiers CSS, je trouvais le tout un peu complexe personnellement (dossier > dossier > dossier...).
+
+-- Barre de promo --
+J'ai retiré cette barre, car c'est un zoo... Je ne crois pas nécessaire de faire de la promotion comme les gros magasins comme Walmart, Amazon, par exemple.
+
+-- Navigation secondaire --
+J'ai ajouté une petite navigation secondaire avec des liens rapides (sans sous-menu), car ça évite d'aller jusqu'au bas de la page au besoin!
+
+-- Section bienvenue --
+J'ai choisi de mettre une grande image en arrière-plan au lieu de deux, car, à mon avis, la section principale de bienvenue ne devrait pas être trop chargée.
+De plus, tout contenu de texte était en "position: absolute;" alors que ce n'était pas nécessaire, on peut l'éviter.
+
+-- Section Articles --
+J'ai changé les "surtitres" <small> de position, car je ne trouvais pas ça super clair au départ, à mon avis.
+Et j'ai réduit le titre de section <h2> "Apprenez-en plus!".
+
+-- Section Activités familiales --
+J'ai voulu créer un design de "pastille" en arrière-plan et donc j'ai modifié la disposition des éléments.
+J'ai aussi ajouté un titre de section <h2> "Quoi faire au zoo?".
+
+-- Section Découvrir animaux --
+J'ai repris les cartes de liens de la section Articles, mais je les ai disposées différemment afin de créer une variation, que ce ne sois pas l'exacte même chose que la section Articles.
+Donc ici, ce serait un carousel (Il ne fonctionne pas réellement! J'ai ajouter un "overflow: hidden" pour ne pas briser le site!)
+
+-- Section Aidez-nous --
+J'ai complètement changé cette section pour disposer les éléments de manière amusante.
+
+-- Section Appel à l'action --
+J'ai modifié l'alignement (gauche) pour garder une certaine cohérence et lisibilité.
+
+-- Footer --
+J'ai simplement distancé les éléments un peu. J'ai ajouté une section "navigation-contact" avec l'adresse, une adresse courriel et un numéro de téléphone. C'est toujours pratique d'avoir ces petites informations facilement accessibles (et toujours présentes sur toutes les pages) pour les usagers! J'ai aussi déplacé la petite navigation des réseaux sociaux au même endroit. 
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+
+/* Conteneur spécifique : Section Aidez-nous ----------------------- */
+
+    /* Dégagement supplémentaire du 
+        bas pour la section suivante */
+    .section-aidez-nous {
+        margin-bottom: 310px;
+    }
+
+
+/* Adaptaion aux écrans ----------------------- */
+
+    /* Appareil <940px */
+    @media screen and (max-width: 940px) {
+        /* Modifier la disposition de la section */
+        .section-aidez-nous>.flex-row {
+            flex-direction: column;
+        }
+
+        /* Réduire le dégagement supplémentaire 
+            du bas pour la section suivante */
+        .section-aidez-nous {
+            margin-bottom: 150px;
+        }
+    }
+
+    /* Appareil <500px */
+    @media screen and (max-width: 500px) {
+        /* Modifier l'espacement entre les cartes */
+        .section-aidez-nous>.flex-row {
+            gap: 60px;
+        }
+
+        /* Réduire le dégagement supplémentaire 
+            du bas pour la section suivante */
+        .section-aidez-nous {
+            margin-bottom: 200px;
+        }
+    }
+
+

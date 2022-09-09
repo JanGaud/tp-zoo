@@ -1,0 +1,121 @@
+
+/* Conteneur spécifique : Pied de page ----------------------- */
+
+    /* Base graphique du pied de page */
+    body>footer {
+        min-height: 30vh;
+    }
+
+    /* Retirer la marge du bas et ajouter 
+        un dégagement intérieur supplémentaire 
+        pour le texte */
+    body>footer {
+        margin-bottom: 0;
+        padding-bottom: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /* Retirer la marge du haut pour le 
+        coller à la section précédente */
+    body>footer {
+        margin-top: 0;
+    }
+
+    /* Base graphique du conteneur 
+        du contenu principal */
+    body>footer>.flex-row {
+        justify-content: space-between;
+        gap: 160px;
+        width: 100%;
+    }
+
+    /* Style de base du pied de page */
+    body>footer {
+        color: white;
+        background-color: #36140d;
+    }
+
+    /* Style des sous-titres du pied de page */
+    body>footer h2 {
+        font-size: 1.125em;
+    }
+
+    /* Style du texte <p> (copyright) */
+    body>footer>p {
+        margin-top: 20px;
+        max-width: unset;
+        text-align: center;
+        font-size: 0.625em;
+        font-weight: 300;
+    }
+
+    /* Base graphique de la section 
+        de navigation contact */
+    .section-navigation-contact {
+        gap: 40px;
+    }
+
+
+/* Conteneur spécifique : Conteneur des liens des navigations du pied de page ----------------------- */
+
+    /* Base graphique des navigations */
+    .liens-nav-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Modifier l'espacement entre 
+        les liens <a> des navigations */
+    .liens-nav-footer>*+* {
+        margin-top: 10px;
+    }
+
+    /* Style des liens de premier 
+        niveau du pied de page */
+    .liens-nav-footer h2 {
+        min-width: unset;
+        font-size: 1.125em;
+        border-bottom: 1px solid rgb(200, 200, 200);
+    }
+
+
+/* Adaptaion aux écrans ----------------------- */
+
+    /* Appareil <1275px */
+    @media screen and (max-width: 1275px) {
+        /* Réduire les marges intérieures 
+            du pied de page */
+        body>footer {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    /* Appareil <1130px */
+    @media screen and (max-width: 1130px) {
+        /* Réduire l'espacement de la 
+            section de navigation contact */
+        body>footer>.flex-row {
+            gap: 80px;
+        }
+    }
+
+    /* Appareil <730px */
+    @media screen and (max-width: 730px) {
+        /* Réduire l'espacement de la 
+            section de navigation contact */
+        body>footer>.flex-row {
+            gap: 40px;
+        }
+
+        /* Modifier la disposition du conteneur 
+            du contenu principal */
+        body>footer>.flex-row {
+            flex-direction: row;
+            justify-content: flex-start;
+            width: 100%;
+        }
+    }
+
+

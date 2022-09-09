@@ -1,0 +1,56 @@
+
+/* Conteneur spécifique : Cartes de liens avec image ----------------------- */
+
+    /* Base graphique des cartes de liens */
+    .carte-lien {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Assurer la hauteur complète 
+        de tous les articles */
+    .carte-lien>* {
+        flex: 1;
+    }
+
+    /* Établir les dimensions du 
+        conteneur des images */
+    .carte-lien picture {
+        width: 100%;
+        height: 30vh;
+    }
+
+    /* Base graphique des images */
+    .carte-lien img {
+        overflow: hidden;
+    }
+
+    /* Style de base des liens d'articles */
+    .carte-lien>a {
+        color: white;
+        background-color: rgb(27,27,27);
+    }
+
+    .carte-lien>a:hover {
+        color: black;
+        background-color: white;
+        transition-duration: 0.4s;
+    }
+
+    /* Marges intérieures du 
+        conteneur des titres d'articles */
+    .titre-lien {
+        padding: 20px;
+    }
+
+    /* Ajuster l'espacement entre 
+        les éléments de texte */
+    .titre-lien>*+* {
+        margin-top: 10px;
+    }
+
+    .titre-lien p {
+        font-weight: 300;
+    }
+
+

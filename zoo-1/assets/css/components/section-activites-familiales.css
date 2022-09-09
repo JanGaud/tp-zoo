@@ -1,0 +1,193 @@
+
+/* Conteneur spécifique : Section Activités familiales ----------------------- */
+
+/* Base graphique de la section */
+    .section-activites-familiales {
+        position: relative;
+        min-height: 650px;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    /* Style de base de la section */
+    .section-activites-familiales {
+        color: black;
+    }
+
+    /* Alignement vertical centré */
+    .section-activites-familiales {
+        justify-content: center;
+    }
+
+    /* Marges de sécurité du 
+        contenu de la section */
+    .section-activites-familiales>article {
+        margin: 20px;
+    }
+
+    /* Image en arrière-plan */
+    .section-activites-familiales::before {
+        background-image: url("../../img/activites_familiales.jpg");
+    }
+
+    /* Établir la largeur et la hauteur (rond parfait) 
+        du conteneur de type « pastille » */
+    .section-activites-familiales .pastille {
+        width: 800px;
+        height: 800px;
+    }
+
+    /* Base graphique du conteneur 
+        de type « pastille » */
+    .section-activites-familiales .pastille {
+        align-items: flex-start;
+        text-align: left;
+        padding: 80px;
+        padding-left: 192px;
+        transform: translateX(-150px);
+    }
+
+    /* Ajouter une couleur de fond */
+    .section-activites-familiales .pastille {
+        background-color: rgb(200, 200, 200);
+    }
+
+
+/* Adaptaion aux écrans ----------------------- */
+
+    /* Appareil <1300px */
+    @media screen and (max-width: 1300px) {
+        /* Réduire la hauteur de la section */
+        .section-activites-familiales {
+            min-height: 550px;
+        }
+
+        /* Ajuster la largeur et la hauteur (rond parfait) 
+            du conteneur de type « pastille » */
+        .section-activites-familiales .pastille {
+            width: 700px;
+            height: 700px;
+        }
+
+        /* Base graphique du conteneur 
+            de type « pastille » */
+        .section-activites-familiales .pastille {
+            transform: translateX(-150px);
+        }
+
+        /* Image en arrière-plan */
+        .section-activites-familiales::before {
+            background-position-x: 6vw;
+        }
+    }
+
+    /* Appareil <1000px */
+    @media screen and (max-width: 1000px) {
+        /* Réduire la hauteur de la section */
+        .section-activites-familiales {
+            min-height: 700px;
+        }
+
+        /* Ajuster la largeur et la hauteur (rond parfait) 
+            du conteneur de type « pastille » */
+        .section-activites-familiales .pastille {
+            width: 800px;
+            height: 800px;
+        }
+
+        /* Modifier les bases graphiques 
+            du bouton de type pastille */
+        .section-activites-familiales .pastille {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-right: 90px;
+            padding-left: 20rem;
+        }
+
+        /* Base graphique du conteneur 
+            de type « pastille » */
+        .section-activites-familiales .pastille {
+            transform: translate(-300px);
+        }
+    }
+
+    /* Appareil <700px */
+    @media screen and (max-width: 700px) {
+        /* Réduire la hauteur de la section */
+        .section-activites-familiales {
+            min-height: 900px;
+        }
+
+        /* Centrer le contenu */
+        .section-activites-familiales {
+            align-items: center;
+        }
+
+        /* Ajuster la largeur et la hauteur (rond parfait) 
+            du conteneur de type « pastille » */
+        .section-activites-familiales .pastille {
+            width: 90vw;
+            height: 90vw;
+        }
+
+        /* Modifier les bases graphiques 
+            du bouton de type pastille */
+        .section-activites-familiales .pastille {
+            padding-left: 80px;
+            padding-right: 80px;
+            text-align: center;
+            align-items: center;
+        }
+
+        /* Base graphique du conteneur 
+            de type « pastille » */
+        .section-activites-familiales .pastille {
+            transform: translateY(25%);
+        }
+
+        /* Image en arrière-plan */
+        .section-activites-familiales::before {
+            background-position: top right;
+            background-position-y: -100px;
+            background-size: 130vw;
+        }
+    }
+
+    /* Appareil <600px */
+    @media screen and (max-width: 600px) {
+        /* Réduire la hauteur de la section */
+        .section-activites-familiales {
+            overflow: hidden;
+        }
+
+        /* Ajuster la largeur et la hauteur (rond parfait) 
+            du conteneur de type « pastille » */
+        .section-activites-familiales .pastille {
+            width: 540px;
+            height: 540px;
+        }
+
+        /* Modifier les bases graphiques 
+            du bouton de type pastille */
+        .section-activites-familiales .pastille {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+
+        /* Image en arrière-plan */
+        .section-activites-familiales::before {
+            background-size: 780px;
+        }
+    }
+
+    /* Appareil <450px */
+    @media screen and (max-width: 450px) {
+        .section-activites-familiales .pastille {
+            padding-left: 90px;
+            padding-right: 90px;
+        }
+    }
+
+

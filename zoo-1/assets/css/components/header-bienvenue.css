@@ -1,0 +1,130 @@
+
+/* Conteneur spécifique : Entête principale ----------------------- */
+
+    /* Base graphique du conteneur 
+        de l'entête principale */
+    .header-bienvenue {
+        position: relative;
+        min-height: 875px;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Positionner le contenu texte */
+    .header-bienvenue {
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Style de base du conteneur 
+        de l'entête principale */
+    .header-bienvenue {
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.459);
+        background-color: rgb(0, 0, 0, .2);
+    }
+
+    /* Image en arrière-plan */
+    .header-bienvenue::before {
+        background-image: url("../../img/foret.jpg");
+        background-attachment: fixed;
+        min-height: inherit;
+        background-color: rgb(0, 0, 0);
+        box-shadow: 0px 0px 70px rgb(0, 0, 0) inset;
+    }
+
+    /* Marges de sécurité */
+    .header-bienvenue>* {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /* Largeur maximale du titre <h1> */
+    .header-bienvenue h1 {
+        max-width: 20ch;
+        padding-top: 350px;
+    }
+
+    /* Base graphique du 
+        texte de paragraphe <p> */
+    .header-bienvenue p {
+        font-size: 1.5em;
+        max-width: 50ch;
+    }
+
+
+/* Adaptaion aux écrans ----------------------- */
+
+    /* Appareil <1700px */
+    @media screen and (max-width: 1700px) {
+        /* Ajuster la marge du haut du titre <h1> */
+        .header-bienvenue h1 {
+            padding-top: 25%;
+        }
+    }
+
+    /* Appareil <1350px */
+    @media screen and (max-width: 1350px) {
+        /* Ajuster la marge du haut du titre <h1> */
+        .header-bienvenue h1 {
+            padding-top: 30%;
+        }
+    }
+
+    /* Appareil <1150px */
+    @media screen and (max-width: 1150px) {
+        /* Ajuster la marge du haut du titre <h1> */
+        .header-bienvenue h1 {
+            padding-top: 30%;
+        }
+
+        /* Ajuster les propriétés de la typographie 
+            du paragraphe de la section */
+        .header-bienvenue p {
+            font-size: 1.25em;
+            max-width: 45ch;
+        }
+    }
+
+    /* Appareil <880px */
+    @media screen and (max-width: 880px) {
+        /* Ajuster la marge du haut du titre <h1> */
+        .header-bienvenue h1 {
+            padding-top: 60%;
+        }
+
+        /* Ajuster les propriétés de la typographie 
+            du paragraphe de la section */
+        .header-bienvenue p {
+            font-size: 1.25em;
+            max-width: 45ch;
+        }
+    }
+
+    /* Appareil <500px */
+    @media screen and (max-width: 500px) {
+        /* Modifier la hauteur minimale 
+            afin de garder l'image à 100% */
+        .header-bienvenue {
+            min-height: 100%;
+        }
+
+        /* Ajuster la marge du haut du titre <h1> */
+        .header-bienvenue h1 {
+            padding-top: 80px;
+        }
+
+        /* Ajuster les propriétés de la typographie 
+            du paragraphe de la section */
+        .header-bienvenue p {
+            font-size: 1.25em;
+            max-width: 25ch;
+        }
+
+        /* Dégagement en-dessous du paragraphe <p> */
+        .header-bienvenue p {
+            padding-bottom: 80px;
+        }
+    }
+
+

@@ -24,18 +24,19 @@
     justify-content: space-between;
 }
 
-
+/*dimensions d'image des cartes*/
 .images-animaux img{
     width: 100%;
     height: inherit;
     object-fit: cover;
 }
-
+/*dimensions du cadre de l'image des cartes*/
 .images-animaux{
     height: 300px;
     width: 100%;
 }
 
+/*button en savoir plus sur les animaux*/
 #pageAnimaux button{
     width: 150px;
     padding: 10px;
@@ -46,6 +47,7 @@
     box-shadow:2px 2px 5px rgba(0, 0, 0, 0.212) inset;
 }
 
+/*hover sur les boutons des cartes des animaux*/
 #pageAnimaux button:hover{
     transition: 0.4s;
     background-color: #347434;
@@ -60,39 +62,46 @@
     height: inherit;
 }
 
+/* conteneur du logo animal rescue*/
 .animal-rescue-logo-container{
     width: 200px;
     height: auto;
 }
 
+/*conteneur de l'image du logo animal rescue*/
 .animal-rescue-logo-container>img{
     width: 100%;
     height: auto;
 }
 
+/*positionement et alignement du gro titre et du logo animal rescue*/
 .animal-rescue{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/*Positionnement des ecussons d'animaux*/
 .ecussons-selections{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
+/*dimension de conteneur des ecussons*/
 .container-ecussons{
     width: 200px;
     height: 200px;
 }
 
+/*dimensions des img d'ecussons*/
 .container-ecussons>img{
     width: 200px;
     height: auto;
 }
 
+/*animations d'aggrandissement des ecussons lors du survol de la souris*/
 .container-ecussons>img:hover{
     transition: 0.6s;
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
